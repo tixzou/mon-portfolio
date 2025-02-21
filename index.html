@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <!-- --------- QRCode CSS ---------- -->
+    <style>
+        .qr-code {
+            display: inline-block;
+            margin-left: 10px;
+            width: px; /* Ajustez la taille ici */
+            height: 80px; /* Ajustez la taille ici */
+        }
+        .skill-icon {
+            margin-right: 5px;
+        }
+    </style>
+
+    <title>Portfolio | Théry Maublanc</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Théry</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Accueil</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">Compétences</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projets</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#veille" class="nav-link">Veille</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn">Téléchargez mon CV<i class="uil uil-file-alt"></i></button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Théry Maublanc</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Actuellement en deuxième année de BTS Services Informatiques aux Organisations option SLAM en alternance chez Dijon Formation, j'espère continuer chez Essilor Luxoticca afin de valider un Bac+3 dans le développement d'applications web.
+                </p>
+            </div>
+            <div class="social_icons">
+                <div class="icon">
+                    <a href="https://fr.linkedin.com/in/th%C3%A9ry-maublanc-682030221" target="_blank">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <img src="assets/images/codeqr.png" alt="QR Code" class="qr-code">
+                </div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="assets/images/avatar.png" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+       </section>
+
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+        <div class="top-header">
+            <h1>Mes compétences</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>Introduction</h3>
+                    <p>Je suis compétent en HTML, CSS et JavaScript, ainsi qu'en d'autres frameworks et bibliothèques de pointe, ce qui me permet de mettre en œuvre des fonctionnalités interactives.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span><i class="uil uil-html5 skill-icon"></i> HTML</span>
+                        <span><i class="uil uil-css3-alt skill-icon"></i> CSS</span>
+                        <span><i class="uil uil-js-square skill-icon"></i> JavaScript</span>
+                        <span><i class="uil uil-react skill-icon"></i> React</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span><i class="uil uil-python skill-icon"></i> Python</span>
+                        <span><i class="uil uil-nodejs skill-icon"></i> Node.js</span>
+                    </div>
+                </div>
+                
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span><i class="uil uil-database skill-icon"></i> SQL Server Management Studio (SSMS)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+<!-- -------------- PROJECT BOX ---------------- -->
+<section class="section" id="projects">
+    <div class="top-header">
+        <h1>Projets</h1>
+    </div>
+    <div class="project-container">
+        <div class="project-box" style="background-image: url('assets/images/incertphoto.png');">
+            <label>InCert</label>
+            <label style="text-align: center; padding: 20px; display: block;">Application permettant la gestion des inserts créés.</label>
+        </div>
+        <div class="project-box" style="background-image: url('assets/images/postrojphoto.png');">
+            <label>POST ROJ</label>
+            <label style="text-align: center; padding: 20px; display: block;">Le fichier est un outil de gestion pour suivre les indicateurs de performance de la production, comme les volumes et les taux de qualité, aidant ainsi à optimiser les processus et à prendre des décisions éclairées en fonction des objectifs.</label>
+        </div>
+        <div class="project-box" style="background-image: url('assets/images/zplimage.png');">
+            <label>Etiquette ZPL</label>
+            <label style="text-align: center; padding: 20px; display: block;">Création de fichiers ZPL afin d'imprimer des étiquettes afin pouvoir scanner les pochettes et assurer une certaine traçabilité.</label>
+        </div>
+        <div class="project-box" style="background-image: url('assets/images/portfoliophoto.png');">
+            <label>Portfolio</label>
+            <label style="text-align: center; padding: 20px; display: block;">Création d'un portfolio mettant en avant les projets finalisés et lister les différentes compétences acquises.</label>
+        </div>
+    </div>
+</section>
+
+
+
+       <!-- -------------- VEILLE BOX ---------------- -->
+       <section class="section" id="veille">
+          <div class="top-header">
+              <h1>Développement Personnel</h1>
+          </div>
+          <div class="veille-container">
+            <!-- Sujets sur React -->
+            <div class="veille-box">
+                <i class="uil uil-react"></i>
+                <h3>React 18 et les Nouvelles Fonctionnalités</h3>
+                <p>Exploration des nouvelles fonctionnalités de React 18, telles que la concurrence et les transitions automatiques.</p>
+            </div>
+            <div class="veille-box">
+                <i class="uil uil-server"></i>
+                <h3>React Server Components</h3>
+                <p>Découverte des Server Components pour rendre une partie de l'application sur le serveur, améliorant ainsi les performances.</p>
+            </div>
+            <div class="veille-box">
+                <i class="uil uil-database-alt"></i>
+                <h3>React Query pour la Gestion des Données</h3>
+                <p>Utilisation de React Query pour simplifier le fetching, la mise en cache et la synchronisation des données dans les applications React.</p>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>VOUS AVEZ UN PROJET EN TÊTE?</h1>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Contactez moi <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: thery.maublanc3@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: 0672270744</p>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Nom">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Envoyer<i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </section>
+    </main>
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Théry Maublanc</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Accueil</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">Compétences</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projets</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#veille">Développement Personnel</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon">
+                <a href="https://fr.linkedin.com/in/th%C3%A9ry-maublanc-682030221" target="_blank">
+                    <i class="uil uil-linkedin-alt"></i>
+                </a>
+                <img src="assets/images/codeqr.png" alt="QR Code" class="qr-code">
+            </div>
+        </div>
+    </footer>
+   </div>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
